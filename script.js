@@ -1,4 +1,4 @@
-const apiKey = "69fe6238703903e37065ffab8520a080";
+const apiKey = "[Your api key]";
 const weatherIcon = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temprature");
 const cityElement = document.querySelector(".City");
@@ -53,7 +53,7 @@ for (const key in weatherImages) {
     }
 }
 if (!matched) {
-    weatherIcon.src = "assets/clouds.png"; // fallback
+    weatherIcon.src = "assets/clouds.png";
 }
 
 }
