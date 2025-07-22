@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin: 0; padding: 0; box-sizing: border-box; background-image: url(assets/weather.jpg) ; background-repeat: no-repeat; background-size: cover; height: 100dvh; font-family: sans-serif;">
+    <div class="container">
+    <header style="display: flex; align-items: center; justify-content: center; text-align: center;">
+        <div style="margin-top: 1em;" >
+        <h1>🌦️Welcome to Your Daily Briefing</h1>
+        <h4 style="color: black;" >"Check the skies, feel the vibe - your weather starts here"</h4>
+        </div>
+    </header>
+    <main style="display:flex; align-items:center; flex-direction: column; justify-content: center; text-align:center;" >
+        <div class="city">
+            <input style="border: none; text-align: center; width:10em ; font-size: 1.4em; border-radius: 15px; margin-top: 0.5em;" type="text" name="city" placeholder="Enter your city name">
+        </div>
+        <div style="display: flex; gap: 1em;" class="search-box">
+            <button style="background-color: blue; border: none; color: white;font-size: 1em; margin-top: 1em;box-shadow: 0 4px 20px rgb(159, 159, 159); border-radius: 5px; width: 7em; height: 2em;" >GetWeather</button>
+            <button style="background-color: blue; border: none; color: white;font-size: 1em; margin-top: 1em;box-shadow: 0 4px 20px rgb(159, 159, 159); border-radius: 5px; height: 2em; width: 7em;" >Location</button>
+            <button id="resetBtn" style="background-color: rgb(56, 54, 54); border: none; color: white; font-size: 1em; margin-top: 1em; box-shadow: 0 4px 20px rgb(159, 159, 159); border-radius: 5px; height: 2em; width: 7em;">
+  Reset
+</button>
+
+
+        </div>
+          <button id="bgBtn" type="button" class="bkc-btn" ><b>Change background</b></button>
+        <!-- weather imgs -->
+         <div class="weather">
+            <img style="width: 11em;" height="160em" src="assets/clouds.png" class="weather-icon">
+            <h1 class="temprature">--°C </h1>
+            <h2 style="font-weight: 500; font-family:'Times New Roman', Times, serif;" class="City"><b>City</b></h2>  
+            
+            <div style="display: flex;justify-content: center; align-items: center; gap: 8em;"   class="weather-details">
+                <div style="display: flex; align-items: center; text-align: left;" class="weather-details-col">
+                <img class="img1" style="width: 4em; margin-right: 1em;" src="assets/humidity.png">
+                <div class="img1-text" style="font-size: 1em; font-weight: 200;" >
+                <p class="humidity">--%</p>
+                <p><b>Humdity</b></p>
+                </div>
+             </div>
+              
+             <div style="display: flex; align-items: center; text-align: left;"  class="weather-details-col">
+                <img class="img2" style="width: 4em; margin-right: 1em;" src="assets/wind.png">
+                <div class="img2-text" style="font-size: 1em; font-weight: 200;"  >
+                <p class="wind">km/h</p>
+                <p><b>WindSpeed</b></p>
+                </div>
+                </div>
+            </div>  
+         </div>
+       </div> 
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
