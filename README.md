@@ -26,7 +26,7 @@ This repository contains the final stage of my **Cognifyz Web Development Intern
 
 ## 📸 Preview
 
-![Weather App Screenshot](assets/weather.jpg)
+![Weather App Screenshot](assets/preview.png)
 
 > Real-time weather info with a styled and validated input experience
 
